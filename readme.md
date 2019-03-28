@@ -39,22 +39,23 @@ Run the database migrations
 $ php artisan migrate
 ```
 
-Install passport
+Install Passport
 
 ```bash
 $ php artisan passport:install
 ```
 
-Run the database seeders
+Seed the database
 
 ```bash
 $ php artisan db:seed
 ```
 
-Test the application with laravel's built-in server by running:
+Update the `.env` file (if using Laravel Valet with .test as domain)
 
-```bash
-$ php artisan serve
+```
+JANITOR_OAUTH_TOKEN_URL=http://laravel-janitor-passport-demo.test/oauth/token
 ```
 
-If you have valet installed make sure to add the project to valet's path.
+Otherwise update the url accordingly.
+
